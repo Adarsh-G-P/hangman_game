@@ -114,15 +114,15 @@ def test_check_correct():
 
 
 
-# def test_check_wrong():
-#     secret_word = "hospital"
-#     guesses = ["i", "t", "p"]
-#     turns_remaining = 6
-#     new_guess = "x"
-#     status, turns_remaining = hangman.check(secret_word, guesses, turns_remaining, new_guess)
-#     assert status == hangman.wrong
-#     assert turns_remaining == 5
-#     assert guesses == ["i", "t", "p", "x"]
+def test_check_wrong():
+    secret_word = "hospital"
+    guesses = ["i", "t", "p"]
+    turns_remaining = 6
+    new_guess = "x"
+    status, turns_remaining = hangman1.check(secret_word, guesses, turns_remaining, new_guess)
+    assert status == hangman1.wrong
+    assert turns_remaining == 5
+    assert guesses == ["i", "t", "p", "x"]
 
 # def test_game_over_not_over():
 #     secret_word = "policeman"
