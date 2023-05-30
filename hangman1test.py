@@ -66,20 +66,20 @@ def test_masked_word_correct_guesses():
     word = "elephant"
     assert hangman1.masked_word(word, ['e', 'l', 'p', 'h', 'a', 'n', 't']) == 'elephant'
       
-# def test_masked_word_repeated_letters():
-#     word = "elephant"
-#     assert hangman1.masked_word(word, ['e']) == 'e-e-----'
+def test_masked_word_repeated_letters():
+    word = "elephant"
+    assert hangman1.masked_word(word, ['e']) == 'e-e-----'
 
  
 
-# def test_get_status_basic():
-#     secret_word = "helicopter"
-#     guesses = ["c", "o", "x"]
-#     turns_remaining = 3
-#     ret = hangman.get_status(secret_word, guesses, turns_remaining)
-#     assert ret == """Secret word:----co----
-# Guesses : c o x
-# Remaining turns : 3"""
+def test_get_status_basic():
+    secret_word = "helicopter"
+    guesses = ["c", "o", "x"]
+    turns_remaining = 3
+    ret = hangman1.get_status(secret_word, guesses, turns_remaining)
+    assert ret == """Secret word:----co----
+Guesses : c o x
+Remaining turns : 3"""
         
 # def test_get_status_no_guesses():
 #     secret_word = "helicopter"
