@@ -54,9 +54,9 @@ def test_masked_word_no_guesses():
     assert hangman1.masked_word(word, []) == '--------'
 
 
-# def test_masked_word_wrong_guesses():
-#     word = "elephant"
-#     assert hangman1.masked_word(word, ['x']) == '--------'
+def test_masked_word_wrong_guesses():
+    word = "elephant"
+    assert hangman1.masked_word(word, ['x']) == '--------'
 
 # def test_masked_word_repeated_guesses():
 #     word = "elephant"
