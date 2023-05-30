@@ -30,15 +30,15 @@ def get_status(secret_word, guesses, turns_remaining):
 Guesses : {guessed_letters}
 Remaining turns : {turns_remaining}"""
 
-# def check(secret_word, guesses, turns_remaining, new_guess):    
-#     if new_guess in guesses:
-#         return already_guessed, turns_remaining
-#     else:
-#         guesses.append(new_guess)
-#         if new_guess in secret_word:
-#             return correct, turns_remaining
-#         else:
-#             return wrong, turns_remaining-1
+def check(secret_word, guesses, turns_remaining, new_guess):    
+    if new_guess in guesses:
+        return already_guessed, turns_remaining
+    else:
+        guesses.append(new_guess)
+        if new_guess in secret_word:
+            return correct, turns_remaining
+        else:
+            return wrong, turns_remaining-1
 
 # def game_over(secret_word, guesses, turns_remaining):
 #     if turns_remaining == 0:
