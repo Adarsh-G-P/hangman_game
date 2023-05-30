@@ -49,9 +49,9 @@ def test_select_random_word_no_repetitions():
         secret_words.add(hangman1.get_random_word())
     assert len(secret_words) == 10
     
-# def test_masked_word_no_guesses():
-#     word = "elephant"
-#     assert hangman1.masked_word(word, []) == '--------'
+def test_masked_word_no_guesses():
+    word = "elephant"
+    assert hangman1.masked_word(word, []) == '--------'
 
 
 # def test_masked_word_wrong_guesses():
