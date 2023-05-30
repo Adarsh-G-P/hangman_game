@@ -102,15 +102,15 @@ def test_check_already_guessed():
     assert guesses == ["i", "t"]
 
 
-# def test_check_correct():
-#     secret_word = "hospital"
-#     guesses = ["i", "t"]
-#     turns_remaining = 6
-#     new_guess = "p"
-#     status, turns_remaining = hangman.check(secret_word, guesses, turns_remaining, new_guess)
-#     assert status == hangman.correct
-#     assert turns_remaining == 6
-#     assert guesses == ["i", "t", "p"]
+def test_check_correct():
+    secret_word = "hospital"
+    guesses = ["i", "t"]
+    turns_remaining = 6
+    new_guess = "p"
+    status, turns_remaining = hangman1.check(secret_word, guesses, turns_remaining, new_guess)
+    assert status == hangman1.correct
+    assert turns_remaining == 6
+    assert guesses == ["i", "t", "p"]
 
 
 
