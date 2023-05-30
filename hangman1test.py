@@ -81,14 +81,14 @@ def test_get_status_basic():
 Guesses : c o x
 Remaining turns : 3"""
         
-# def test_get_status_no_guesses():
-#     secret_word = "helicopter"
-#     guesses = []
-#     turns_remaining = 8
-#     ret = hangman.get_status(secret_word, guesses, turns_remaining)
-#     assert ret == """Secret word:----------
-# Guesses : 
-# Remaining turns : 8"""
+def test_get_status_no_guesses():
+    secret_word = "helicopter"
+    guesses = []
+    turns_remaining = 8
+    ret = hangman1.get_status(secret_word, guesses, turns_remaining)
+    assert ret == """Secret word:----------
+Guesses : 
+Remaining turns : 8"""
 
 
 # def test_check_already_guessed():
