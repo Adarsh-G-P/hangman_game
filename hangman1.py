@@ -50,25 +50,25 @@ def game_over(secret_word, guesses, turns_remaining):
         return True, f"You guessed it! The word was {secret_word}"
 
 
-# def main():
-#     secret_word = get_random_word()
-#     print (secret_word)
-#     guesses = []
-#     turns_remaining = 8
-#     while True:
-#         print (get_status(secret_word, guesses, turns_remaining))
-#         guess = input("Enter a letter ")
+def main():
+    secret_word = get_random_word()
+    print (secret_word)
+    guesses = []
+    turns_remaining = 8
+    while True:
+        print (get_status(secret_word, guesses, turns_remaining))
+        guess = input("Enter a letter ")
         
-#         status, turns_remaining = check(secret_word, guesses, turns_remaining, guess)
-#         if status == already_guessed:
-#             print ("You already guessed that")
+        status, turns_remaining = check(secret_word, guesses, turns_remaining, guess)
+        if status == already_guessed:
+            print ("You already guessed that")
         
-#         finished, message = game_over(secret_word, guesses, turns_remaining)
-#         if message:
-#             print (message)
-#         if finished:
-#             break
+        finished, message = game_over(secret_word, guesses, turns_remaining)
+        if message:
+            print (message)
+        if finished:
+            break
 
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()
