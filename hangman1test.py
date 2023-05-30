@@ -124,13 +124,13 @@ def test_check_wrong():
     assert turns_remaining == 5
     assert guesses == ["i", "t", "p", "x"]
 
-# def test_game_over_not_over():
-#     secret_word = "policeman"
-#     guesses = ["x", "t"]
-#     turns_remaining = 5
-#     finished, message = hangman.game_over(secret_word, guesses, turns_remaining)
-#     assert not finished
-#     assert message == None  
+def test_game_over_not_over():
+    secret_word = "policeman"
+    guesses = ["x", "t"]
+    turns_remaining = 5
+    finished, message = hangman1.game_over(secret_word, guesses, turns_remaining)
+    assert not finished
+    assert message == None  
 
 # def test_game_over_over_won():
 #     secret_word = "elephant"
